@@ -3,4 +3,16 @@ if ARCH_OMNIVISION_R3
 config SYS_SOC
 	default "omnivision-r3"
 
+choice
+	prompt "OV798 board select"
+	optional
+
+config TARGET_OV798_NOFLASH
+	bool "OV798 No Flash board"
+
+endchoice
+
+
+source "board/omnivision/ov798_noflash/Kconfig"
+
 endif

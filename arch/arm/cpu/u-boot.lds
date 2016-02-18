@@ -7,7 +7,7 @@
  * SPDX-License-Identifier:	GPL-2.0+
  */
 
-#include <config.h>
+/* #include <config.h> */
 
 OUTPUT_FORMAT("elf32-littlearm", "elf32-littlearm", "elf32-littlearm")
 OUTPUT_ARCH(arm)

@@ -78,10 +78,8 @@ choice
 	default TARGET_HIKEY
 
 config ARCH_OMNIVISION_R3
-	bool "OmniVision"
-
-config TARGET_OV798_NOFLASH
-	bool "OV798 no flash board"
+	bool "OmniVision-R3"
+	select CPU_V7
 
 config ARCH_AT91
 	bool "Atmel AT91"
