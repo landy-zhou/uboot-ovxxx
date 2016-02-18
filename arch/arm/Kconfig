@@ -77,6 +77,12 @@ choice
 	prompt "Target select"
 	default TARGET_HIKEY
 
+config ARCH_OMNIVISION_R3
+	bool "OmniVision"
+
+config TARGET_OV798_NOFLASH
+	bool "OV798 no flash board"
+
 config ARCH_AT91
 	bool "Atmel AT91"
 
@@ -729,6 +735,8 @@ source "arch/arm/mach-kirkwood/Kconfig"
 
 source "arch/arm/mach-mvebu/Kconfig"
 
+source "arch/arm/cpu/armv7/omnivision-r3/Kconfig"
+
 source "arch/arm/cpu/armv7/mx7/Kconfig"
 
 source "arch/arm/cpu/armv7/mx6/Kconfig"
@@ -844,6 +852,7 @@ source "board/technologic/ts4800/Kconfig"
 source "board/vscom/baltos/Kconfig"
 source "board/woodburn/Kconfig"
 source "board/work-microwave/work_92105/Kconfig"
+source "board/omnivision/ov798_noflash/Kconfig"
 
 source "arch/arm/Kconfig.debug"
 

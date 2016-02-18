@@ -1,0 +1,6 @@
+if ARCH_OMNIVISION_R3
+
+config SYS_SOC
+	default "omnivision-r3"
+
+endif

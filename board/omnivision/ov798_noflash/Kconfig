@@ -1,0 +1,12 @@
+if TARGET_OV798_NOFLASH
+
+config SYS_BOARD
+	default "ov798_noflash"
+
+config SYS_VENDOR
+	default "omnivision"
+
+config SYS_CONFIG_NAME
+	default "ov798_noflash"
+
+endif
